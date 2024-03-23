@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>To-Do-List</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>To-Do-List</h1>
+        <ul id= "task-list">
+            <form onsubmit="addTask(event)">
+                <input type="text" name="addNew" id="add-new"><button class="add-button" onclick="addTask()">Add</button>
+                <button class="delete-button" onclick="deleteList()">Delete</button>
+                <div class="task-box"><li><input type="checkbox" id="task-1" /><label for="task-1">Task 1</li></div>
+                <!-- <li><input type="checkbox" id="task-2" /><label for="task-2">Task 2</li> -->
+                <!-- <li><input type="checkbox" id="task-3" /><label for="task-3">Task 3</li> -->
+                <!-- <li><input type="checkbox" id="task-4" /><label for="task-4">Task 4</li> -->
+                
+            </form>
+        </ul>
+    </div>
+</body>
+<script src="script.js" async defer></script>
+
+</html>

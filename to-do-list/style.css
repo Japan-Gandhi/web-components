@@ -31,6 +31,15 @@ body {
 input[type="checkbox"]
 {
   margin: 0px 10px 0px 0px;
+  appearance: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: rgba(10, 182, 171, 1);
+}
+input[type="checkbox"]:checked
+{
+  background-color: rgb(81, 3, 11);
 }
 
 input[type="checkbox"]:checked + label {
@@ -103,5 +112,5 @@ input[type="text"]:hover {
 
 .task-box:hover {
   transform: scale(1.008);
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }

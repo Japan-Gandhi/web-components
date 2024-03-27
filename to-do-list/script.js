@@ -1,3 +1,4 @@
+var taskCounter;
 
 function addTask(event) {
   event.preventDefault();
@@ -15,22 +16,30 @@ function addTask(event) {
 
   newCheckbox.type = "checkbox";
   newCheckbox.id = "task-" + (taskList.children.length + 1);
+  taskCounter++;
 
   var newLabel = document.createElement("label");
 
   newLabel.setAttribute("for", newCheckbox.id);
 
   newLabel.textContent = textbox.value;
-  
+
   newTask.appendChild(newCheckbox);
   newTask.appendChild(newLabel);
   taskBox.appendChild(newTask);
   taskList.appendChild(taskBox);
-  
+
   textbox.value = "";
 }
 
-function deleteList()
-{
-
+function deleteList() {
+  
+   var taskList = document.getElementById("task-list");
+   taskList.innerHTML = "";
+  
+  // for (var i = 1; i <= taskCounter; i++) 
+  // {
+  //   // task = document.getElementById("task-" + i);
+  //   // task.innerHtml = "";
+  // }
 }

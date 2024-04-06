@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: rgba(10, 182, 171, 1);
+  background-color: rgb(174, 234, 230);
   font-family: "Onest";
 }
 
@@ -18,7 +18,7 @@ body {
   border-radius: 10px;
   box-shadow: 1px 1px 5px 1px rgb(8, 8, 8);
   align-items: center;
-  width: 90vw;
+  width: 50vw;
   background-color: rgba(21, 21, 21, 1);
   /* background-image: linear-gradient(to top , rgb(79, 136, 234), rgb(141, 176, 237) ); */
 }
@@ -58,7 +58,7 @@ li {
 input[type="text"] {
   margin: 10px;
   padding: 10px;
-  width: 75vw;
+  width: 35vw;
   border-radius: 5px;
   outline: none;
   background-color: rgb(239, 232, 224);
@@ -96,7 +96,7 @@ input[type="text"]:hover {
 }
 
 .delete-button:hover {
-  background-color: rgba(209, 89, 89, 0.923);
+  background-color: rgba(220, 62, 62, 0.923);
   transition: 0.2s ease-in-out;
 }
 
@@ -112,5 +112,5 @@ input[type="text"]:hover {
 
 .task-box:hover {
   transform: scale(1.008);
-  transition: 0.1s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
